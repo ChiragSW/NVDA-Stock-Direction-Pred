@@ -14,6 +14,6 @@ else:
     prices = df.copy()
 
 prices = prices[Tickers]
-print("shape:", prices.shape)
-print(prices.tail())
+# print("shape:", prices.shape)
+# print(prices.tail())
 prices.to_csv("../data/prices_sample.csv")

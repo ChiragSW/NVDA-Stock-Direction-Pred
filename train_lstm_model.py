@@ -16,7 +16,8 @@ LOOKBACK = 60
 EPOCHS = 20
 BATCH_SIZE = 32
 
-# load data
+# load data and once to sanity check
+os.system("00_sanity_check.py")
 df = pd.read_csv(DATA_PATH, index_col="Date", parse_dates=True)
 # print(df.shape)
 # print(df.tail())

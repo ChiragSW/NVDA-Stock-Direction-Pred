@@ -6,6 +6,7 @@ import joblib
 from send_email import send_email
 
 # load data
+os.system("00_sanity_check.py")
 df = pd.read_csv("data/prices_sample.csv", index_col="Date", parse_dates=True)
 features = df[["NVDA", "GOOGL", "AAPL", "META"]].values
 
